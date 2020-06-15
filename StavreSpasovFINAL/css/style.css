@@ -1,0 +1,181 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    display: block;
+    margin: 25px auto;
+    position: relative;
+}
+
+#board {
+    position: absolute;
+}
+
+.moves {
+    font-family: Impact, fantasy;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    color: white;
+}
+
+.moves h1 {
+    font-family: Impact, fantasy;
+    text-align: center;
+    font-size: 65px;
+    color: white;
+    margin: 30px 0 20px 0;
+}
+
+.moves h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.moves div {
+    display: inline-block;
+}
+
+.moves .bot,
+.x {
+    padding: 5px;
+    background-color: #FFF;
+    color: blueviolet;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-left: 70px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px blueviolet;
+}
+
+.moves .mate,
+.o {
+    padding: 5px;
+    background-color: #FFF;
+    color: blueviolet;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+}
+
+.moves .mate:hover,
+.bot:hover,
+.x:hover,
+.o:hover {
+    background-color: blueviolet;
+    color: #FFF;
+}
+
+.moves .play {
+    font-family: Impact, fantasy;
+    font-size: 1.5em;
+    width: 80px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 100%;
+    border: 1px solid blueviolet;
+    text-align: center;
+    padding: 10px;
+    background-color: blueviolet;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.active {
+    font-family: Impact, fantasy;
+    background-color: blueviolet !important;
+    color: #FFF !important;
+}
+
+.hide {
+    display: none;
+}
+
+.gameover {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-image: url("../assets/images/xd.png");
+}
+
+.gameover h1 {
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fascinate Inline', cursive;
+    color: #fff;
+    margin: 40px 0 42px 0;
+}
+
+.gameover .winner-img {
+    display: block;
+    margin: 20px auto;
+}
+
+.gameover .play {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 30px;
+    width: 250px;
+    margin: 25px auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+body {
+    background-image: url("../assets/images/bodyBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+.container h1 {
+    font-family: Impact, fantasy;
+    ;
+}
+
+.container h2 {
+    font-family: New Century Schoolbook, serif;
+    ;
+}
+
+.home-menu a {
+    color: whitesmoke;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+    opacity: 40%;
+    background: none;
+    border: none;
+}
+
+#head {
+    padding-top: 90px;
+    text-align: center;
+    color: white;
+    font-family: "Gill Sans", sans-serif;
+    font-size: small;
+}
+
+@media (min-width: 78em) {
+    body {
+        height: auto;
+    }
+    .splash-head {
+        font-size: 300%;
+    }
+}
